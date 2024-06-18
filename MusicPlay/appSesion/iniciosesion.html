@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="sesion.css">
+</head>
+<body>
+        
+    <div class="container">
+        <div class="container-form">
+            <form class="sign-in" id="sign-in-form">
+                <h2>Iniciar Sesión</h2>
+                <div class="social-networks">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-tiktok"></ion-icon>
+                </div>
+                <span>Use su correo y contraseña o su número de celular</span>
+                <div class="container-input">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="text" placeholder="Email" id="email">
+                </div>
+                <div class="container-input">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" placeholder="Password" id="password">
+                </div>
+                <div class="container-input">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <input type="text" placeholder="Número de celular" id="phone-number">
+                </div>
+                <button type="button" class="button" id="send-code">Enviar Código</button>
+                <div class="container-input">
+                    <ion-icon name="key-outline"></ion-icon>
+                    <input type="text" placeholder="Código de verificación" id="verification-code">
+                </div>
+                <a href="/recuperarcuenta/recuperarcontraseña.html">¿Olvidaste tu contraseña?</a>
+                <button type="button" class="button" id="sign-in-button">INICIAR SESIÓN</button>
+            </form>
+        </div>
+
+        <div class="container-form">
+            <form class="sign-up" id="sign-up-form">
+                <h2>Registrarse</h2>
+                <div class="social-networks">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-tiktok"></ion-icon>
+                </div>
+                <span>Use su correo electrónico o su número de celular para registrarse</span>
+                <div class="container-input">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="text" placeholder="Nombre" id="name">
+                </div>
+                <div class="container-input">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="text" placeholder="Email" id="register-email">
+                </div>
+                <div class="container-input">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" placeholder="Password" id="register-password">
+                </div>
+                <div class="container-input">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <input type="text" placeholder="Número de celular" id="register-phone-number">
+                </div>
+                <button type="button" class="button" id="register-send-code">Enviar Código</button>
+                <div class="container-input">
+                    <ion-icon name="key-outline"></ion-icon>
+                    <input type="text" placeholder="Código de verificación" id="register-verification-code">
+                </div>
+                <button type="button" class="button" id="sign-up-button">REGISTRARSE</button>
+            </form>
+        </div>
+
+        <div class="container-welcome">
+            <div class="welcome-sign-up welcome">
+                <h3>¡Bienvenido!</h3>
+                <p>Ingrese sus datos personales para usar todas las funciones del sitio</p>
+                <button class="button" id="btn-sign-up">Registrarse</button>
+            </div>
+            <div class="welcome-sign-in welcome">
+                <h3>¡Hola!</h3>
+                <p>Regístrese con sus datos personales para usar todas las funciones del sitio</p>
+                <button class="button" id="btn-sign-in">Iniciar Sesión</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="apk.js"></script>
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
